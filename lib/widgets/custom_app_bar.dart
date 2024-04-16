@@ -8,12 +8,12 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         const Text(
-          'Note App',
-          style: TextStyle(fontSize: 20),
+          'Notes',
+          style: TextStyle(fontSize: 24),
         ),
         const Spacer(),
         Container(
-          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.2),
             borderRadius: BorderRadius.circular(8),
