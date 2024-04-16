@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/widgets/custom_app_bar.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: Scaffold(
-      body: NotesApp(),
-    ),
-  ));
+  runApp(
+    MaterialApp(
+        title: 'Note_app',
+        theme: ThemeData(brightness: Brightness.dark),
+        home: const Scaffold(
+          body: NotesApp(),
+        )),
+  );
 }
 
 class NotesApp extends StatelessWidget {
@@ -13,7 +17,14 @@ class NotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Ahmed');
+    return const Padding(
+      padding: EdgeInsets.all(24.0),
+      child: Column(
+        children: [
+          CustomAppBar(),
+        ],
+      ),
+    );
     //
   }
 }
